@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}Projects{% endblock %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+{% block content %}
+    <h1>Projects</h1>
+    <section class="projects-container">
+      <div class="project-item">
+        <a href="/projects/epimetheus">
+          <img src="/static/images/Epimetheus-header.png" alt="Epimetheus">
+          <h3>Epimetheus</h3>
+        </a>
+      </div>
+      <div class="project-item">
+        <a href="/projects/intesavincente">
+          <img src="/static/images/intesavincente.png" alt="IntesaVincente">
+          <h3>Intesa Vincente</h3>
+        </a>
+      </div>
+        <div class="project-item">
+        <a href="/projects/dardos">
+          <img src="/static/images/dardos.png" alt="Dardos">
+          <h3>Dardos</h3>
+        </a>
+      </div>
+    </section>
+{% endblock %}
+
+</body>
+</html>

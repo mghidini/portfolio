@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   {% block title %}Dardos{% endblock %}
+</head>
+<body>
+{% block content %}
+<div class="single-project-container">
+    <h1>Dardos</h1>
+
+    <section class="github-repository">
+        <a href="https://github.com/mghidini/Dardos" target="_blank">View on GitHub</a>
+    </section>
+
+    <section class="overview">
+      <h3>Overview:</h3>
+      <p>The project Dardos implements a method to Identify and score darts thrown into dartboard,
+          using segmentation and image processing tools.</p>
+    </section>
+
+    <section class="role">
+      <h3>My Role:</h3>
+      <p>This project was completed as part of the coursework for Digital Image Processing,
+          at <a href="https://www.informatica.us.es/" target="_blank">Universidad de Sevilla</a>,
+          in a 2 members team.</p>
+    </section>
+
+    <section class="technologies">
+      <h3>Technologies Used:</h3>
+      <p>The work has been carried out using MATLAB.</p>
+    </section>
+
+    <section class="research">
+      <h3>Academic Research:</h3>
+      <p>The work was supported by academic research in the following fields:</p>
+      <ul>
+        <li>Image segmentation techniques.</li>
+        <li>The Hough transform technique for extraction in digital image processing.</li>
+        <li>Canny algorithm for edge detection.</li>
+      </ul>
+    </section>
+
+    <section class="objectives">
+      <h3>Objectives:</h3>
+      <p>The project involves locating a dart on a dartboard in an image to determine the score. <br>
+          We have a classic circular dartboard divided into twenty sections, alternating colors between white and black,
+          with two concentric circles (bullseye). <br>
+          There are also two outer rings, alternating in green and red, which further divide the dartboard
+          into double and triple score zones. <br>
+          To accurately calculate the points, we must correctly determine  the location of the dart on the dartboard
+          and the corresponding points for that location.
+          This is achieved using digital image processing techniques.</p>
+    </section>
+
+    <section class="solutions">
+      <h3>Solutions Implemented:</h3>
+        <p>The problem is divided into two parts. <br>
+            In the first part, we will segment the dartboard image to assign the corresponding points to each pixel. <br>
+            The second task is to locate the dart, determining the pixels in the image that correspond to the point
+            where the dart is in contact with the dartboard.</p>
+        <h4>Dartboard Segmentation</h4>
+      <p>To obtain the dartboar segmentation, we use image processing functions and techniques. <br>
+          We first separated the dartboard from the image backgroung; then we segmented the multiplication zones
+          (x2, x3, bullseye, and inner bullseye) by color, specifically green and red. <br>
+          Finally, we obtained the radial division of the dartboard and assigned the correct points to all scoring zones.</p>
+      <img src="/static/images/dardos-segmentation.png" alt="Dartboard Segmentation">
+
+      <h4>Dart Identification</h4>
+      <p>To identify the dart on the dartboard, we implemented an algorithm that extracts the object
+          based on the RGB channels, specifically the blue channel.  <br> Once the region of the dart is obtained,
+          the next step is to find the endpoints, specifically the point where the dart tip is located,
+          to correctly assign the points. <br>
+          To determine which end is the dart tip, we use the orientation of the dart in the image.</p>
+
+      <h4>Scoring Algorithm</h4>
+      <p>Once the division of the dartboard is obtained, each region is assigned its corresponding score. <br>
+          The coordinates of the pixel where the dart tip is located are then taken to calculate the obtained points. <br>
+          To verify if the score is single, double, triple, or null,
+          we use the masks previously created with the dartboard segmentation algorithm.</p>
+      <img src="/static/images/dardos-getscore.png" alt="Get Score">
+    </section>
+
+    <section class="implementation">
+      <h3>Implementation:</h3>
+      <p>The project is developed in MATLAB and consists of a main script, <code>Dardos.m</code>, and two functions,
+          <code>segmentarDiana.m</code> and <code>getScore.m.</code>  <br>
+          When the script <code>Dardos.m</code> is executed, the program prompts the user to load the photo of the dartboard
+          and the photo of the dartboard with the dart. <br>
+          Then, the function <code>segmentarDiana.m</code> is called to divide the dartboard into different regions. <br>
+          Finally the function <code>getScore.m</code> is called and the correct score is presented to the user.</p>
+    </section>
+
+  </div>
+{% endblock %}
+</body>
+</html>

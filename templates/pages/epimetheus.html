@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   {% block title %}Epimetheus{% endblock %}
+</head>
+<body>
+{% block content %}
+<div class="single-project-container">
+    <h1>Epimetheus</h1>
+
+    <section class="github-repository">
+        <a href="https://github.com/mghidini/Bachelor-Thesis" target="_blank">View on GitHub</a>
+    </section>
+
+    <section class="overview">
+      <h3>Overview:</h3>
+      <p>Epimetheus is a Clinical Decision Support System designed and developed by
+          <a href="https://mudilab.disco.unimib.it/" target="_blank">MUDI Lab</a>
+          (Research Lab at Università degli Studi Milano Bicocca). <br>
+          It implements Machine Learning models to provide predictions on the outcomes
+          of orthopedic surgical procedures, particularly regarding patient recovery,
+          thereby assisting the doctors in the clinical decision-making process. <br>
+          Specifically, the support aims to highlight a very delicate aspect of the decision-making journey,
+          which is the representation of uncertainty.</p>
+    </section>
+
+    <section class="role">
+      <h3>My Role:</h3>
+        <ul>
+        <li>I collaborated with MUDI Lab on the Epimetheus project for my bachelor thesis in Computer Science.</li>
+        <li>I helped develop a web app that implements a Clinical Decision Support System using Machine Learning Models.</li>
+        <li>I documented and compiled a final report, outlining methodologies, results, and conclusions.</li>
+        <li>Finally, I presented and defended the thesis to the academic committee.</li>
+      </ul>
+    </section>
+
+    <section class="technologies">
+      <h3>Technologies Used:</h3>
+      <p>Python, Flask, Postman, Apache, XAMPP, LaTeX, GitHub</p>
+    </section>
+
+    <section class="research">
+      <h3>Academic Research:</h3>
+      <p>My work was supported by academic research in the following fields:</p>
+      <ul>
+        <li>Clinical applications of AI and ML</li>
+        <li>Clinical Decision Support Systems</li>
+        <li>Visualization of uncertainty in the medical field</li>
+      </ul>
+    </section>
+
+    <section class="features">
+      <h3>Key Features:</h3>
+      <p><strong>Epimetheus is a Clinical Decision Support System:</strong> it helps the communication between doctor and patient.</p>
+      <p><strong>Epimetheus uses Machine Learning Models:</strong> these components calculate predictions on the outcomes of operations, based on data inserted by the user in a form.</p>
+      <p><strong>Visualization of uncertainty:</strong> the results of the predictions are shown through the use of clear and intuitive diagrams.</p>
+      <p><strong>Epimetheus is a Web App:</strong> it provides users with simple and intuitive access via a web browser.</p>
+    </section>
+
+    <section class="solutions">
+      <h3>Solutions Implemented:</h3>
+        <h4>Two-tier architecture</h4>
+      <p>Separating front-end from back-end let us develop and test UI and back-end as separate entities;
+          it also assures greater scalability, modularity and enhances flexibility in development for future modifications.</p>
+      <p>The front-end part consists of a React application, while the back-end is a Flask server implementing a RESTful API;
+          specific endpoints were created for the front-end and back-end to communicate and exchange data.</p>
+      <img src="/static/images/epimetheus-sequence-diagram.png" alt="Architecture Diagram">
+
+      <h4>User Interface</h4>
+      <p>The interface consists of two pages: on the first page, the data entry form is presented,
+          where the doctor inputs the patient's information. <br>
+          Once all fields are filled out, the user, by clicking a button, initiates the prediction calculation. <br>
+          If there are no errors, they land on the results page, where they can view data visualizations;
+          there are four different visualization diagrams.</p>
+        <img src="/static/images/epimetheus-ui1.png" alt="UI Image">
+        <p></p>
+        <img src="/static/images/epimetheus-ui2.png" alt="UI Image">
+
+      <h4>Application Deployment</h4>
+      <p>The application was deployed using an Apache Server configured on a computer with a public IP Address. <br>
+          This choice ensures complete control over the hosting environment and server configuration
+          and gives us the capability to handle high volumes of traffic while maintaining high performance.</p>
+      <img src="/static/images/epimetheus-omponent-diagram.png" alt="Deployment Image">
+    </section>
+
+    <section class="results">
+      <h3>Results, Impact, and Future Enhancements:</h3>
+      <p>Epimetheus is a software designed to directly aid in clinical decision-making:
+          the characteristics of individual patients are compared with a computerized clinical knowledge base,
+          and patient situations or recommendations are presented to the doctor for a decision.</p>
+      <p>In the context of technological evolution and the growing importance of data in the healthcare sector,
+          applications like Epimetheus represent a valuable resource for improving the quality of medical care
+          and optimizing clinical decision-making processes. They simplify doctor-patient communication,
+          promote data understanding, and facilitate calculation and prediction, even when dealing with large
+          quantities of data and high complexity.</p>
+      <p>Testing the application in a real environment and receiving feedback from users will highlight
+          the strengths and weaknesses of the application, fostering continuous and iterative development of the system. <br>
+          Moreover, demonstrating its utility and reliability in the clinical context would encourage healthcare providers
+          to use it and integrate it into their practice.</p>
+    </section>
+  </div>
+{% endblock %}
+</body>
+</html>

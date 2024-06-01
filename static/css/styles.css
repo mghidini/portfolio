@@ -1,0 +1,372 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+.highlight {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: #ff0000; /* Optional: add color for highlighting */
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace; /* Set the font to a monospace font */
+  color: #666; /* Optional: change the text color */
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: #ffdac5;
+    margin: 0;
+    padding: 0;
+/*    background-image: url('../images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Sets the height of the background to 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    color: #ed4672;
+    text-align: center;
+}
+
+h3 {
+  margin-top: 40px;
+  color: #FF7C15;
+  font-size: 24px;
+}
+
+h4 {
+  margin-top: 40px;
+  color: #FFB400;
+  font-size: 20px;
+}
+
+p {
+    font-family: 'Source Sans 3', sans-serif;
+    color: #666;
+    text-align: justify;
+    font-size: 20px;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+  color: #FF7C15;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+    background-color: #ff99b7; /* Background color for the navigation bar */
+    padding: 20px; /* Add padding to the top and bottom */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    text-align: right; /* Center-align the list items */
+}
+
+nav ul li {
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 20px; /* Add spacing between list items */
+}
+
+nav ul li a {
+    color: #fff; /* Text color for the navigation links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px; /* Add padding to the links for better clickability */
+}
+
+nav ul li a:hover {
+    background-color: #ed4672; /* Background color on hover */
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.container .navbar-brand {
+    display: none;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffdac5;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px; /* Additional space above the footer */
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: 14px; /* Adjust font size as needed */
+    margin: 10px 0; /* Add margin for spacing between paragraphs */
+    text-align: center
+}
+
+/* HOME PAGE */
+
+.home-container {
+    text-align: center;
+    color: white;
+    display: inline-block
+}
+
+.home-container a {
+    color: #666;;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px; /* Optional: rounds the corners */
+    background-color: #FFB400;
+    transition: background-color 0.3s ease;
+}
+
+.home-container a:hover {
+    background-color: #FF7C15; /* Background color on hover */
+    color: white;
+}
+
+.separator {
+    color: #666; /* Change to your desired color */
+    /* You can also add other styling properties here, such as font-size, margin, etc. */
+}
+
+.home-container h1 {
+    font-size: 80px; /* Adjust the size as needed */
+    padding: 20px;
+}
+
+.home-container p {
+    font-size: 22px; /* Adjust the size as needed */
+    padding-bottom: 20px;
+    text-align: center;
+}
+.wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Ensures the wrapper takes up remaining space between nav and footer */
+}
+
+
+/* PROJECTS PAGE */
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.project-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+}
+
+.project-item a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 20px;
+}
+
+.project-item img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.project-item h3 {
+  margin: 10px 0;
+  color: #FF7C15;
+}
+
+.single-project-container ul li {
+  margin: 5px 0;
+  font-family: 'Source Sans 3', sans-serif;
+  color: #666;
+  font-size: 20px;
+}
+
+.single-project-container img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.single-project-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.github-repository {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.github-repository a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #FFB400;
+  color: #666;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.github-repository a:hover {
+    background-color: #FF7C15;
+    color: white;
+}
+
+/* ABOUT ME PAGE */
+
+.aboutme-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100hv;
+    width: 100wv;
+    /*background: #ffdac5;*/
+    overflow: auto; /* Enable scrolling */
+}
+
+.left-column, .right-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-column p {
+    font-size: 22px;
+    text-align: justify;
+}
+
+.right-column {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /* Additional styles for responsiveness */
+    max-height: 400px; /* Example maximum height to avoid excessive size */
+}
+
+.cv-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FFB400;
+    color: #666;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cv-link:hover {
+    background-color: #FF7C15;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .left-column, .right-column {
+        border: none;
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .right-column {
+        border-top: 1px solid #e0e0e0;
+    }
+}
+
+/* CONTACT PAGE */
+
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-icons img {
+    width: 60px; /* Adjust icon size as needed */
+    height: 60px;
+}
+
+.social-icons a:last-child {
+    margin-right: 0; /* Remove margin for the last icon */
+}
+
+.email-link p {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.email-link a {
+    color: #ff7c15; /* Link color */
+    text-decoration: none;
+}
+
+.email-link a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+

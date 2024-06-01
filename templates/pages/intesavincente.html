@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   {% block title %}Intesa Vincente{% endblock %}
+</head>
+<body>
+{% block content %}
+<div class="single-project-container">
+    <h1>Intesa Vincente</h1>
+
+    <section class="github-repository">
+        <a href="https://github.com/mghidini/Intesa-Vincente"_blank">View on GitHub</a>
+    </section>
+
+    <section class="overview">
+      <h3>Overview:</h3>
+      <p>Intesa Vincente is an Android Application that draws inspiration from the popular
+          italian TV quiz show “Reazione a Catena” and offers the opportunity
+          to play the game "L’Intesa Vincente", featured in the show. </p>
+        <p>The game involves a team of three players: two players, the clue-givers, are presented with
+            the same randomly selected word. <br>
+            By each saying only one word at a time, they must formulate coherent sentences to describe the word
+            and help the third player, the guesser, figure it out.</p>
+        <p>The application is designed to support the real game, offering interfaces that engage users
+            and manage game data to make the gameplay fun and dynamic.</p>
+    </section>
+
+    <section class="role">
+      <h3>My Role:</h3>
+      <p>The Intesa Vincente app was designed and developed for the Mobile Development Programming course,
+          at <a href="https://www.disco.unimib.it/it" target="_blank">Università degli Studi Milano Bicocca</a>,
+          in a 4 members team.</p>
+    </section>
+
+    <section class="technologies">
+      <h3>Technologies Used:</h3>
+      <p>The application is developed using Java, the Gradle build system, and the Android Studio IDE. <br>
+          Other external services have been used, such as Firebase and the Retrofit library.</p>
+      <img src="/static/images/intesa-vincente-architecture.png" alt="Project Overview Image">
+    </section>
+
+    <section class="features">
+      <h3>Key Features:</h3>
+        <h4>Login</h4>
+        <p>The user can log into the application. There are two login options available: via email and password,
+            and via Google Account.</p>
+        <h4>Registration</h4>
+        <p>The user registers for the application by entering their email address, password, and a chosen nickname.</p>
+        <h4>Logout</h4>
+        <p>The user can log out of the application.</p>
+        <h4>Edit Profile</h4>
+        <p>The user can modify their personal information, specifically email, password, and nickname.</p>
+        <h4>Play</h4>
+        <p>The user can start a game by choosing from various modes and options that best suit their preferences
+            (creating a new group or joining an existing one, selecting the role to play, etc.). <br>
+            The simulated game requires three players and thus three devices. <br>
+            Two players (Clue-Givers) will be shown the same randomly selected word on their devices to make
+            the third player guess, according to the game's rules.  <br> On the Guesser's device, guessed words,
+            available passes, and remaining time are displayed.  <br> The Guesser can manage the game via buttons
+            to pause and resume time, use passes, and enter guessed words.</p>
+        <h4>Statistics</h4>
+        <p>The user can view all the information related to the games they have played over time,
+            including the number of games played, won and lost, the highest number of points obtained in a single game
+            and the total number of words guessed.</p>
+        <h4>Friends</h4>
+        <p>The user can view the list of users they have played with.</p>
+    </section>
+
+    <section class="solutions">
+      <h3>Solutions Implemented:</h3>
+      <p>The app was designed according to Google Android guidelines and Material Design principles.</p>
+      <img src="/static/images/intesa-vincente-screenshot1.png" alt="Screenshot">
+        <img src="/static/images/intesa-vincente-screenshot2.png" alt="Screenshot">
+        <img src="/static/images/intesa-vincente-screenshot3.png" alt="Screenshot">
+        <img src="/static/images/intesa-vincente-screenshot4.png" alt="Screenshot">
+    </section>
+
+    <section class="results">
+      <h3>Results:</h3>
+      <p>The final project was evaluated by the examination board and received a score of 29/30.</p>
+    </section>
+
+  </div>
+{% endblock %}
+</body>
+</html>

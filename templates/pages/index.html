@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}Home{% endblock %}
+</head>
+<body>
+    {% block content %}
+    <div class="wrapper">
+        <div class="home-container">
+            <h1>Ciao! I'm Matilde</h1>
+            <h3>I’m a Computer Science graduate,
+                passionate about Human-Computer Interaction and aspiring to be a UX Designer </h3>
+            <p>Welcome to my portfolio. Explore my work and learn more about my journey.</p>
+                <a href="{{ url_for('projectspage') }}">Explore My Projects</a> <span class="separator">|</span>
+                <a href="{{ url_for('aboutpage') }}">Learn More About Me</a>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

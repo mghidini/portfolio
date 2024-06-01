@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}Contact{% endblock %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+{% block content %}
+    <div class="contact-container">
+        <h1>Let's Connect!</h1>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/matilde-ghidini-b223a3238" target="_blank"><img src="/static/icons/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://github.com/mghidini" target="_blank"><img src="/static/icons/github.svg" alt="Github"></a>
+            <!-- Add more social media icons as needed -->
+        </div>
+        <div class="email-link">
+            <p>Email: <a href="mailto:matilde.ghidini00@gmail.com">matilde.ghidini00@gmail.com</a></p>
+        </div>
+    </div>
+{% endblock %}
+
+</body>
+</html>

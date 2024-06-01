@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}About{% endblock %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+{% block content %}
+        <div class="aboutme-container">
+        <div class="left-column">
+            <h1>It's nice to meet you!</h1>
+            <p>I was born and raised in Italy, where my curiosity for both the human and the creative aspects
+                of life shaped my educational journey.</p>
+            <p>My fascination with languages during high school ignited my passion for understanding
+                human communication and culture. <br>
+                This interest naturally evolved into a desire to explore the intersection between technology
+                and the human experience, leading me to earn a Bachelor's degree in Computer Science.
+            </p>
+            <p>
+                Throughout my studies, I discovered the powerful synergy between human-centered design
+                and technological innovation. </p>
+            <p>I believe that the best designs emerge from a deep understanding of both the user's needs
+                and the technological possibilities.
+            </p>
+        </div>
+        <div class="right-column">
+            <img src="static/images/photo.jpg" alt="profile picture" class="profile-pic">
+            <a href="/static/cv-matilde-ghidini.pdf" class="cv-link" download>Download My CV</a>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>
